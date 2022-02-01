@@ -4,7 +4,7 @@
   "description": "Ejercicios realizados para el curso de desarrollo web Full Stack Digital House",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Juan Felipe Prada",
