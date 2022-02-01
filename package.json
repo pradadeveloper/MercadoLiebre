@@ -1,0 +1,15 @@
+{
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "description": "Ejercicios realizados para el curso de desarrollo web Full Stack Digital House",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Juan Felipe Prada",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

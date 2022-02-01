@@ -1,0 +1,285 @@
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    box-sizing: border-box;
+    background-color: #EAC926; 
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+main{
+    background-color: #ebebeb;
+    margin: 0px;
+}
+
+p{  
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12px;   
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    margin: 10px 0;
+    color: rgb(34, 9, 9);
+}
+
+h2{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+
+/* ////////////////HEADER //////////////////7*/
+
+.main-header-top-bar{
+    align-items: center;
+}
+
+.logo_div{
+    margin: 10px;
+    justify-content: center;
+}
+
+.logo_principal{
+    justify-content: center;
+    width: 200px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #222222;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.div_burger_menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.burger_menu{
+    background-color: #03264c;
+    color: white;
+    display: block;
+    margin: auto;
+    max-width: 50px;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.carrito-compras{
+    justify-content: left;
+    color: #39b54a;
+    background-color: white;
+    font-size: 10px;
+}
+
+.banner_principal{
+    width: 100%;
+    margin: 0%;
+}
+
+.banner_principal_div{
+    text-align: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.copy_header{
+    text-align: right;
+}
+
+.barra_de_busqueda{
+    justify-content: right;
+    max-width: 200px;
+}
+
+.busqueda{
+    border: transparent;
+    border-radius: 5px;
+    max-width: 200px;
+    height: 25px;
+}
+
+
+
+
+/* /////////////VITRINA PRODUCTOS/////////////// */
+.contenedor_ultima_visita{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contenedor_ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product{
+    background-color:white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.product:hover{
+    border-color: #fad000;
+    border-style: solid;
+}
+
+.caja_descripciones{
+    border-top: solid 1px #ebebeb;
+    padding: 0 15px 0 15px;
+}
+
+.imagen_producto{
+    max-width: 90%;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones{
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+/* ////////////////FOOTER //////////////////7*/
+footer{
+    margin:5px  auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright{
+    background-color: #666;
+    color: white;
+    text-align: center;
+}
+
+.text__footer_sect{
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.footer h1{
+    color: blue;
+    font-size: 30px;
+}
+
+.icon_footer{
+    color: blue;
+    font-size: 50px;
+}
+
+/* /////////// MEDIA QUERIES////////// */
+
+@media (Max-width:768px) {
+    .menu, h2{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copy_header{
+        text-align: center;
+    }
+
+    .barra_de_busqueda{
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media (Min-width:768px) {
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy_header{
+        max-width: 350px;
+        text-align: right;
+    }
+
+    main section div article {
+        /* Laptops */
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger_menu{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu ul{
+        display: flex;
+    }
+    .menu li{
+        margin: 0 5px;
+    }
+}
+
+@media (min-width:1200px){
+    .main-header-top-bar, .menu{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .menu{
+        margin: 10px;
+    }
+    .copy_header{
+        max-width: none;
+        text-align: right;
+    }
+}
